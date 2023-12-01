@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Master DOM Manipulation: Part 1</title>
+    <style>
+      body {
+        /* padding: 12px;s */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 100vh;
+        background-image: linear-gradient(rgb(16, 36, 47), rgb(30, 67, 87));
+      }
+      .container {
+        padding: 12px;
+        border-radius: 3%;
+        border: solid 2px rgb(235, 229, 229);
+        gap: -12px;
+        overflow: hidden;
+        /* width: 100%; */
+        /* height: ; */
+      }
+      ul {
+        /* width: 100%; */
+        /* margin-right: 42px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      li {
+        padding: 8px;
+        width: 100%;
+        margin-bottom: 3px;
+        background-color: aliceblue;
+        width: 100%;
+        list-style: none;
+        /* padding: 1px; */
+        box-sizing: border-box;
+        /* width: 100%; */
+        padding-inline-start: 40px;
+      }
+      #main-heading {
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="main-heading">Favourite Movie Franchise</h1>
+      <ul>
+        <li class="list-items">The Matrix</li>
+        <li class="list-items">Stars Wars</li>
+        <li class="list-items">Harry Potter</li>
+        <li class="list-items">Lord of The Rings</li>
+        <li class="list-items">Marvel</li>
+      </ul>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
